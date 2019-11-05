@@ -1,3 +1,4 @@
+import DBConnection.DBConnection;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -5,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
 
 public class Appinitializer extends Application {
 
@@ -15,6 +17,8 @@ public class Appinitializer extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         URL resource = this.getClass().getResource("/View/Dashboard.fxml");
+        Connection connection = DBConnection.getInstance().getConnection();
+
         Parent root = FXMLLoader.load(resource);
         Scene mainScene = new Scene(root);
         primaryStage.setScene(mainScene);
