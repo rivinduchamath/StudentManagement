@@ -1,6 +1,7 @@
 package Controller;
 
 import DBConnection.DBConnection;
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -17,6 +18,7 @@ public class DeleteStudentController {
     public JFXTextField searchStudent;
     public TableView<studentTM> tbl_student;
     public PreparedStatement search;
+    public JFXButton btn_delete;
 
     public void initialize() {
         Connection connection = DBConnection.getInstance().getConnection();
@@ -51,8 +53,6 @@ public class DeleteStudentController {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-
-
         });
 
     }
