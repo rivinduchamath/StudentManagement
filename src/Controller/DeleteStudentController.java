@@ -56,4 +56,8 @@ public class DeleteStudentController {
         });
 
     }
+
+    public void deleteStudent_OnAction(ActionEvent actionEvent) {
+
+    }
 }
