@@ -7,34 +7,34 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="549.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Dashboard">
+<AnchorPane fx:id="root" prefHeight="549.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Dashboard">
    <children>
-      <ImageView fx:id="imgManageStudent" fitHeight="133.0" fitWidth="149.0" layoutX="160.0" layoutY="113.0" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgManageStudent" fitHeight="133.0" fitWidth="149.0" layoutX="160.0" layoutY="113.0" onMouseClicked="#navigate" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/clean.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgSearchStudent" fitHeight="133.0" fitWidth="149.0" layoutX="483.0" layoutY="122.0" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgSearchStudent" fitHeight="133.0" fitWidth="149.0" layoutX="483.0" layoutY="122.0" onMouseClicked="#navigate" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/home-icon.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgUpdateStudent" fitHeight="133.0" fitWidth="149.0" layoutX="815.0" layoutY="122.0" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgUpdateStudent" fitHeight="133.0" fitWidth="149.0" layoutX="815.0" layoutY="122.0" onMouseClicked="#navigate" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/settings.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgDeleteStudent" fitHeight="133.0" fitWidth="149.0" layoutX="160.0" layoutY="338.0" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgDeleteStudent" fitHeight="133.0" fitWidth="149.0" layoutX="160.0" layoutY="338.0" onMouseClicked="#navigate" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/store.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgDeleteTimeTable" fitHeight="133.0" fitWidth="149.0" layoutX="815.0" layoutY="338.0" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgDeleteTimeTable" fitHeight="133.0" fitWidth="149.0" layoutX="815.0" layoutY="338.0" onMouseClicked="#navigate" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/acc.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgStudentTimeTable" fitHeight="133.0" fitWidth="149.0" layoutX="483.0" layoutY="338.0" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgStudentTimeTable" fitHeight="133.0" fitWidth="149.0" layoutX="483.0" layoutY="338.0" onMouseClicked="#navigate" onMouseEntered="#imgMouseOn" onMouseExited="#imgMouseExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/report.png" />
          </image>
