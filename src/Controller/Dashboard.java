@@ -134,7 +134,7 @@ public class Dashboard  implements Initializable {
                     root = FXMLLoader.load(this.getClass().getResource("#"));
                     break;
                 case "imgUpdateStudent":
-                    root = FXMLLoader.load(this.getClass().getResource("#"));
+                    root = FXMLLoader.load(this.getClass().getResource("UpdateForm.fxml"));
                     break;
                 case "imgDeleteStudent":
                     root = FXMLLoader.load(this.getClass().getResource("#"));
