@@ -13,7 +13,7 @@ public class DBConnection {
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentManagement?" +
                             "createDatabaseIfNotExist=true&allowMultiQueries=true",
                     "root",
-                    "Password");
+                    "1234");
             PreparedStatement pstm = connection.prepareStatement("SHOW TABLES");
             ResultSet resultSet = pstm.executeQuery();
             if (!resultSet.next()){

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="commons-beanutils-1.9.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../HotelManagementSystem/lib/jap/commons-beanutils-1.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HotelManagementSystem/lib/jap/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HotelManagementSystem/lib/jap/commons-digester-1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HotelManagementSystem/lib/jap/commons-javaflow-1590792.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HotelManagementSystem/lib/jap/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HotelManagementSystem/lib/jap/jasperreports-6.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HotelManagementSystem/lib/jap/mysql-connector-java-5.1.23-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HotelManagementSystem/lib/jfoenix-8.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HotelManagementSystem/lib/mysql-connector-java-5.1.23-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

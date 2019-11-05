@@ -1,11 +1,16 @@
 package Controller;
 
+import DBConnection.DBConnection;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
-public class Dashboard {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class Dashboard  implements Initializable {
 
     public ImageView imgDeleteTimeTable;
     @FXML
@@ -26,6 +31,8 @@ public class Dashboard {
     @FXML
     private Label lblWelcome;
 
+
+
     @FXML
     void imgMouseExit(MouseEvent event) {
 
@@ -36,4 +43,12 @@ public class Dashboard {
 
     }
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        try {
+            DBConnection.getConnection();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
