@@ -131,7 +131,7 @@ public class Dashboard  implements Initializable {
                     root = FXMLLoader.load(this.getClass().getResource("#"));
                     break;
                 case "imgSearchStudent":
-                    root = FXMLLoader.load(this.getClass().getResource("#"));
+                    root = FXMLLoader.load(this.getClass().getResource("/View/SearchStudent.fxml"));
                     break;
                 case "imgUpdateStudent":
                     root = FXMLLoader.load(this.getClass().getResource("#"));
@@ -140,7 +140,7 @@ public class Dashboard  implements Initializable {
                     root = FXMLLoader.load(this.getClass().getResource("#"));
                     break;
                 case "imgStudentTimeTable":
-                    root = FXMLLoader.load(this.getClass().getResource("#"));
+                    root = FXMLLoader.load(this.getClass().getResource("/View/TimeTable.fxml"));
                     break;
                 case "imgDeleteTimeTable":
                     root = FXMLLoader.load(this.getClass().getResource("#"));
