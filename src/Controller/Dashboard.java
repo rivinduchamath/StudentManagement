@@ -45,10 +45,6 @@ public class Dashboard  implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        try {
-            DBConnection.getConnection();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
     }
 }
