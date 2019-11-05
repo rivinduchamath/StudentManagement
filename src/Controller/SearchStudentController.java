@@ -5,7 +5,7 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import utill.searchTM;
+import utill.studentTM;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,7 +14,7 @@ import java.sql.SQLException;
 
 public class SearchStudentController {
     public JFXTextField searchStudent;
-    public TableView<searchTM> tbl_student;
+    public TableView<studentTM> tbl_student;
     public PreparedStatement search;
 
     public void initialize() {
@@ -38,9 +38,9 @@ public class SearchStudentController {
             try {
                 search.setString(1,"%"+searchStudent.getText()+"%");
                 ResultSet resultSet = search.executeQuery();
-                ObservableList<searchTM> searchItem =  tbl_student.getItems();
+                ObservableList<studentTM> searchItem =  tbl_student.getItems();
                 while(resultSet.next()) {
-                    searchItem.add(new searchTM(
+                    searchItem.add(new studentTM(
                             resultSet.getString(1),
                             resultSet.getString(2),
                             resultSet.getString(3),

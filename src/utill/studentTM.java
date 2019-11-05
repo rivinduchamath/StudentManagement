@@ -1,15 +1,15 @@
 package utill;
 
-public class searchTM {
+public class studentTM {
     private String id;
     private String name;
     private String address;
     private int telephone;
 
-    public searchTM() {
+    public studentTM() {
     }
 
-    public searchTM(String id, String name, String address, int telephone) {
+    public studentTM(String id, String name, String address, int telephone) {
         this.id = id;
         this.name = name;
         this.address = address;
