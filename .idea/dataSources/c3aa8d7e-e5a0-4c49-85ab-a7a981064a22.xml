@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="StudentManagement@localhost">
-  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.9">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.16">
     <root id="1">
       <ServerVersion>5.5.16</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -111,7 +111,6 @@
     </schema>
     <schema id="36" parent="1" name="studentmanagement">
       <Current>1</Current>
-      <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="37" parent="1" name="test">
