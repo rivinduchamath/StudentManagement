@@ -15,7 +15,7 @@ public class DBConnection {
     private DBConnection(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentManagement?createDatabaseIfNotExist=true&allowMultiQueries=true","root","1234");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/StudentManagement?createDatabaseIfNotExist=true&allowMultiQueries=true","root","T42dKML&");
             PreparedStatement show_tables = connection.prepareStatement("SHOW TABLES");
             ResultSet execute = show_tables.executeQuery();
             if(!execute.next()){
