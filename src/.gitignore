@@ -1,2 +1,13 @@
 DBConnection/**
+utill/**
+Appinitializer.java
+asserts/**
+Controller/Dashboard.java
+Controller/SearchStudentController.java
+Controller/TimeTable.java
+Controller/UpdateFormController.java
+View/Dashboard.fxml
+View/SearchStudent.fxml
+View/TimeTable.fxml
+View/UpdateForm.fxml
 .gitignore
