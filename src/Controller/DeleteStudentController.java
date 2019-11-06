@@ -5,6 +5,7 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import utill.studentTM;
@@ -19,9 +20,12 @@ public class DeleteStudentController {
     public TableView<studentTM> tbl_student;
     public PreparedStatement search;
     public JFXButton btn_delete;
+    Connection connection ;
+
+
 
     public void initialize() {
-        Connection connection = DBConnection.getInstance().getConnection();
+      connection =  DBConnection.getInstance().getConnection();
 
         tbl_student.getColumns().get(0).setCellValueFactory(new PropertyValueFactory<>("id"));
         tbl_student.getColumns().get(1).setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -30,7 +34,7 @@ public class DeleteStudentController {
 
         try {
             PreparedStatement search = connection.prepareStatement("SELECT * FROM student WHERE name LIKE ?");
-            search.execute();
+            //search.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -57,7 +61,14 @@ public class DeleteStudentController {
 
     }
 
-    public void deleteStudent_OnAction(ActionEvent actionEvent) {
+    public void deleteStudent_OnAction(ActionEvent actionEvent) throws SQLException {
+        PreparedStatement delete = connection.prepareStatement("DELETE FROM student WHERE id=?");
+        boolean execute = delete.execute();
+        if (execute){
+            new Alert(Alert.AlertType.INFORMATION,"Successfully Deleted the Student").show();
+        }else {
+            new Alert(Alert.AlertType.INFORMATION,"Sorry, Student cannot Delete ").show();
+        }
 
     }
 }
