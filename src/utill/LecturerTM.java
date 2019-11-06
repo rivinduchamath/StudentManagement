@@ -5,7 +5,9 @@ public class LecturerTM {
     private String lecturerName;
     private String subject;
 
+public  LecturerTM(){
 
+}
     public LecturerTM(String subjectId, String lecturerName, String subject) {
 
         this.subjectId = subjectId;

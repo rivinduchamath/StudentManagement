@@ -25,7 +25,7 @@ public class DeleteStudentController {
 
 
     public void initialize() {
-      connection =  DBConnection.getInstance().getConnection();
+        connection = DBConnection.getInstance().getConnection();
 
         tbl_student.getColumns().get(0).setCellValueFactory(new PropertyValueFactory<>("id"));
         tbl_student.getColumns().get(1).setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -33,8 +33,8 @@ public class DeleteStudentController {
         tbl_student.getColumns().get(3).setCellValueFactory(new PropertyValueFactory<>("telephone"));
 
         try {
-            PreparedStatement search = connection.prepareStatement("SELECT * FROM student WHERE name LIKE ?");
-            //search.execute();
+            search = connection.prepareStatement("SELECT * FROM student WHERE name LIKE ?");
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -57,14 +57,18 @@ public class DeleteStudentController {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+
+
         });
 
     }
 
     public void deleteStudent_OnAction(ActionEvent actionEvent) throws SQLException {
+        String stud_id = tbl_student.getSelectionModel().getSelectedItem().getId();
         PreparedStatement delete = connection.prepareStatement("DELETE FROM student WHERE id=?");
+        delete.setString(1,stud_id);
         boolean execute = delete.execute();
-        if (execute){
+        if (execute==false){
             new Alert(Alert.AlertType.INFORMATION,"Successfully Deleted the Student").show();
         }else {
             new Alert(Alert.AlertType.INFORMATION,"Sorry, Student cannot Delete ").show();
