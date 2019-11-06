@@ -11,3 +11,4 @@ View/SearchStudent.fxml
 View/TimeTable.fxml
 View/UpdateForm.fxml
 .gitignore
+.idea/**
