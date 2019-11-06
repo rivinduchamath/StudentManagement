@@ -26,8 +26,12 @@ public class SearchStudentController {
         tbl_student.getColumns().get(3).setCellValueFactory(new PropertyValueFactory<>("telephone"));
 
         try {
+<<<<<<< HEAD
             search = connection.prepareStatement("SELECT * FROM student WHERE name LIKE ?");
 
+=======
+             search = connection.prepareStatement("SELECT * FROM student WHERE name LIKE ?");
+>>>>>>> origin/master
         } catch (SQLException e) {
             e.printStackTrace();
         }
