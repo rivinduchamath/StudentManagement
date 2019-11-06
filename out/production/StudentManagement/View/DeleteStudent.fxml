@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="549.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DeleteStudentController">
+   <children>
+      <JFXTextField fx:id="searchStudent" labelFloat="true" layoutX="255.0" layoutY="140.0" prefHeight="25.0" prefWidth="614.0" promptText="Enter Student name " />
+      <Text layoutX="446.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Student">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tbl_student" layoutX="131.0" layoutY="195.0" prefHeight="349.0" prefWidth="869.0">
+         <columns>
+            <TableColumn prefWidth="115.0" text="Student ID" />
+            <TableColumn minWidth="6.0" prefWidth="263.0" text="Student Name" />
+            <TableColumn minWidth="0.0" prefWidth="316.0" text="Student Address" />
+            <TableColumn prefWidth="174.0" text="Student T.P" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btn_delete" layoutX="955.0" layoutY="153.0" onAction="#deleteStudent_OnAction" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: red;" text="Delete" textFill="#fcfcfc" />
+   </children>
+</AnchorPane>
